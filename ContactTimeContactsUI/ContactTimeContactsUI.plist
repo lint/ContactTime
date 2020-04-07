@@ -1,0 +1,10 @@
+{
+    Filter =     {
+        Bundles =         (
+            "com.apple.MobileAddressBook",
+            "com.apple.MobileSMS",
+            "com.apple.mobilephone",
+            "com.apple.mobilemail"
+        );
+    };
+}

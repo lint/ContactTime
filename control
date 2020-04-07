@@ -1,0 +1,9 @@
+Package: com.lint.contacttime
+Name: ContactTime
+Depends: mobilesubstrate, com.rpetrich.rocketbootstrap
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Shows contact's local time according to their timezone.
+Maintainer: lint
+Author: lint
+Section: Tweaks

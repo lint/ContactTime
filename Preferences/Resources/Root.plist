@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>footerText</key>
+			<string>Apps must be restarted for enabled/disabled to take effect.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.lint.contacttime.prefs/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.lint.contacttime.prefs</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Some explanations: The nav bar is the top header in text conversations. The info section opens when you tap the (i) in the nav bar.</string>
+			<key>label</key>
+			<string>Messages Settings</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.lint.contacttime.prefs/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.lint.contacttime.prefs</string>
+			<key>key</key>
+			<string>isNavTimeEnabled</string>
+			<key>label</key>
+			<string>Enable nav bar time</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.lint.contacttime.prefs/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.lint.contacttime.prefs</string>
+			<key>key</key>
+			<string>isGroupDetailTimeEnabled</string>
+			<key>label</key>
+			<string>Enable groupchat info section time</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.lint.contacttime.prefs/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.lint.contacttime.prefs</string>
+			<key>key</key>
+			<string>isSingleDetailTimeEnabled</string>
+			<key>label</key>
+			<string>Enable single-recipient info section time</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clear saved data</string>
+			<key>action</key>
+			<string>clearData</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Links</string>
+			<key>footerText</key>
+			<string>Feel free to contact me if you are having issues, have feedback, or for any other reason.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Source code</string>
+			<key>action</key>
+			<string>openGitHub</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Message me on reddit</string>
+			<key>action</key>
+			<string>openRedditMessage</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Send me an email</string>
+			<key>action</key>
+			<string>openEmail</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Donate :)</string>
+			<key>action</key>
+			<string>openDonation</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>ContactTime</string>
+</dict>
+</plist>
