@@ -6,6 +6,8 @@
 @interface CTUtil : NSObject
 @property(strong, nonatomic) NSArray *timezones;
 @property(strong, nonatomic) NSArray *timezoneIds;
+@property(strong, nonatomic) NSArray *moreTimezones;
+@property(strong, nonatomic) NSDictionary *timezoneDict;
 @property(strong, nonatomic) NSDateFormatter *dateFormatter;
 @property(strong, nonatomic) NSUserDefaults *defaults;
 @property(strong, nonatomic) CPDistributedMessagingCenter *messagingCenter;
@@ -36,6 +38,7 @@
 - (NSInteger)timeDifferenceForTZID:(NSString *)arg1;
 - (NSString *)formattedTimeStringForDate:(NSDate *)arg1;
 - (CGFloat)timeUntilNextMin;
+- (NSArray *) getTimezonesArray;
 @end
 
 @interface UIColor (stuff)

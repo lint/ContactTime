@@ -4,7 +4,7 @@
 #import "../../Util/CTUtil.h"
 
 @implementation CTEditingTableViewCell
-@synthesize label, timezones, timezoneIds, picker, textField, textFieldDisplayLabel, vertSeparatorView, contactViewController, origTZText, currTZText, pickerHasChanges;
+@synthesize label, timezones, picker, textField, textFieldDisplayLabel, vertSeparatorView, contactViewController, origTZText, currTZText, pickerHasChanges;
 
 - (id)initWithStyle:(UITableViewCellStyle)arg1 reuseIdentifier:(NSString *)arg2{
 
@@ -14,7 +14,7 @@
 
 		self.editingAccessoryType = UITableViewCellAccessoryDetailButton;
 
-		timezones = [[%c(CTUtil) sharedInstance] timezones];
+		timezones = [[%c(CTUtil) sharedInstance] getTimezonesArray];
 
 		label = [[UILabel alloc] initWithFrame:[[self contentView] frame]];
 		textField = [[UITextField alloc] init];

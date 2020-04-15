@@ -79,6 +79,22 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Misc</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.lint.contacttime.prefs/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.lint.contacttime.prefs</string>
+			<key>key</key>
+			<string>isUsingMoreTimezones</string>
+			<key>label</key>
+			<string>Enable more timezone choices</string>
 		</dict>
 		<dict>
 			<key>cell</key>
